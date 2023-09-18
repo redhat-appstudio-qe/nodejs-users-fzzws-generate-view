@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-jmx8
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ujfd-tenant/nodejs-users/simple-nodejs-app-jmx8@sha256:d58cfeacda5fe69e24224e2f618db10c6fef52a414d99fc2cc5dd48c2632c519
+        name: my-nodejs
+        resources: {}
+status: {}
